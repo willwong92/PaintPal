@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">PaintBrushApp</string>
+    <string-array name="toolkit_icons">
+        <item>"brush"</item>
+        <item>"eraser"</item>
+        <item>"palette"</item>
+        <item>"undo"</item>
+        <item>"trash"</item>
+        <item>"save"</item>
+        <item>"gallery"</item>
+    </string-array>
+    <string-array name="toolkit_icons_clicked">
+        <item>"brush_clicked"</item>
+        <item>"eraser_clicked"</item>
+        <item>"palette_clicked"</item>
+        <item>"undo"</item>
+        <item>"trash_clicked</item>
+        <item>"save"</item>
+        <item>"gallery_clicked"</item>
+    </string-array>
+</resources>

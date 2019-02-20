@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mparent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/easel"
+    tools:context="com.willwong.paintbrushapp.MainActivity">
+
+    <TextView
+        android:id="@+id/title_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PaintPal"
+        app:layout_constraintCircle="@id/mparent"
+        app:layout_constraintCircleRadius="120dp"
+        android:textColor="#c8ff0037"
+        android:textSize="48sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        app:layout_constraintCircle="@id/mparent"
+        app:layout_constraintCircleRadius="30dp"
+        android:id="@+id/brush_imageview"
+        android:background="@drawable/paintbrush"/>
+
+    <ProgressBar
+        android:id="@+id/ProgressBar01"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        app:layout_constraintCircle="@id/mparent"
+        app:layout_constraintCircleRadius="30dp"
+        android:indeterminateDrawable="@drawable/progress"
+        />
+
+
+
+</android.support.constraint.ConstraintLayout>

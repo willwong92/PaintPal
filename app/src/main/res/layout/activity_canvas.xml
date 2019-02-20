@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    tools:context="com.willwong.paintbrushapp.CanvasActivity">
+
+
+
+        <com.willwong.paintbrushapp.customview.CanvasView
+            android:id="@+id/canvas_view"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="5dp"
+            android:background="#ffffff" />
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/tool_kit_layout"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.5"
+            android:layout_gravity="center_vertical"></android.support.v7.widget.RecyclerView>
+
+
+
+            <com.rtugeek.android.colorseekbar.ColorSeekBar
+            android:id="@+id/color_seek_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layerType="hardware"
+            app:layout_constraintTop_toBottomOf="@id/tool_kit_layout"
+            app:colorSeeds="@array/rainbow"
+            app:maxPosition="100"
+            app:colorBarPosition="10"
+            app:alphaBarPosition="10"
+            app:barHeight="10dp"
+            app:thumbHeight="13dp"
+            app:showAlphaBar="true"
+                app:barMargin="10dp"
+                />
+</android.support.constraint.ConstraintLayout>
